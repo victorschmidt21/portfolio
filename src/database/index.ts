@@ -1,6 +1,7 @@
 import projectVTFLIX from "../../public/images/projectVTFLIX.png";
 import projectVenturini from "../../public/images/projectVenturini.png";
-import projectCriptoApp from "../../public/images/projectCriptoApp.png"
+import projectCriptoApp from "../../public/images/projectCriptoApp.png";
+import projectShopDEV from "../../public/images/projectShopDEV.png";
 interface ProjectProps {
   name: String;
   linkGit: string;
@@ -10,7 +11,7 @@ interface ProjectProps {
 
 export const projects = <ProjectProps[]>[
   {
-    name: "Venturini Consórcios",
+    name: "Venturini Consórcios - LP",
     linkGit: "https://github.com/victorschmidt21/venturini-consorcios",
     linkSite: "https://venturini-consorcios.vercel.app/ ",
     img: projectVenturini,
@@ -26,5 +27,11 @@ export const projects = <ProjectProps[]>[
     linkGit: "https://github.com/victorschmidt21/projetoCripto",
     linkSite: "https://projeto-cripto-rho.vercel.app/",
     img: projectCriptoApp,
+  },
+  {
+    name: "SHOPDEV - Ecommerce",
+    linkGit: "https://github.com/victorschmidt21/shopdevEcommecer",
+    linkSite: null,
+    img: projectShopDEV,
   },
 ];
