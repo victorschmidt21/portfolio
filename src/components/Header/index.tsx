@@ -9,13 +9,14 @@ interface HeaderProps {
   portfolioRef: RefObject<HTMLElement | null>;
 }
 
-const scrollToSection = (ref: any) => {
-  if (ref?.current) {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
 export function Header({ homeRef, aboutRef, portfolioRef }: HeaderProps) {
+  const scrollToSection = (ref: any) => {
+    if (ref?.current) {
+      setOpen(open ? false : true);
+
+      ref.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const classTextHeader =
     "text-[#959595] text-xl hover:text-[#FD6F00] cursor-pointer select-none pr-15 md:pr-0";
   const classTextHome = "text-xl text-[#FD6F00] cursor-pointer select-none";
